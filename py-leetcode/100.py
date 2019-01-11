@@ -5,8 +5,15 @@
 #         self.left = None
 #         self.right = None
 
+'''
+& 同为真
+| 一个为真
+^ 相异
+'''
 
-def main(p, q):
+
+# 2b方法
+def main1(p, q):
     def tree_to_list(t):
         '''
         转换准则：子树左侧空，右侧不空，则标记空元素一个
@@ -40,3 +47,13 @@ def main(p, q):
         return False
     else:
         return True
+
+
+def isSameTree(self, p, q):
+    if type(p) != type(q):
+        return False
+    elif p == None:  # 两个都为空节点，应该返回true，因为相同位置都为空，是正例
+        return True
+    elif p.val != q.val:
+        return False
+    return (self.isSameTree(p.left, q.left) & self.isSameTree(p.right, q.right))
