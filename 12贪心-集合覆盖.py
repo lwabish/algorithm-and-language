@@ -6,7 +6,7 @@ stations = {
     'kfive': set(['ca', 'az'])
 }
 
-# 类似于列表生成式，集合生成式
+# 类似于列表生成式：集合生成式
 all_states = {i for t in stations.values() for i in t}
 
 final_station, covered_state = set(), set()

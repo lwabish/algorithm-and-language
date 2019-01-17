@@ -48,11 +48,16 @@ def dikstla_search():
     while get_next_node():
         this_node = get_next_node()
         this_node_neighbor = graph[this_node].keys()
-        for i in this_node_neighbor:    # i 是所有邻居节点中的一个比如a,b
+        for i in this_node_neighbor:  # i 是所有邻居节点中的一个比如a,b
+            # 关键优化逻辑：为了最终到达i，如果先到this_node，再到i比目前去i的距离更近，那么就取代之。
+            # 对所有的node以及相对应的下家都做了这个优化后，final_cost里就应该都是最短路了。
             if graph[this_node][i] + final_costs[this_node] < final_costs[i]:
                 final_costs[i] = graph[this_node][i] + final_costs[this_node]
                 parents[i] = this_node
         processed.append(this_node)
+
+
+dikstla_search()
 
 
 def show_shortest_path():
@@ -63,5 +68,4 @@ def show_shortest_path():
     print(order_list)
 
 
-dikstla_search()
 show_shortest_path()
