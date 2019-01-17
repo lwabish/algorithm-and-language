@@ -1,5 +1,4 @@
 import time
-# max_sum = -float("inf")  负无穷
 
 def main(nums):
     sum = 0
