@@ -1,4 +1,4 @@
-from my_data_structure import *
+from my_data_structure import generate_random_linknode, print_linknode, Stack
 import time
 tc = generate_random_linknode(5, 5)  # 生成一个长度为5，值在1-5之间的随机链表
 print_linknode(tc)
