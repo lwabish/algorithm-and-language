@@ -1,5 +1,6 @@
 # 复杂度n**2
 # append+pop的方法简单易懂易操作
+# 非原地
 
 
 def select_sort(arr=[]):

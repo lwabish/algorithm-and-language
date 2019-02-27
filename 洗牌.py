@@ -19,8 +19,8 @@ def shuffle_card(n):
     shuffled_cards = list()
     for i in range(n):
         shuffled_cards.append(cards.pop(random.randint(0, n-i-1)))
-    return cards, shuffled_cards
+    return shuffled_cards
 
 
-cards, shuffled_cards = shuffle_card(54)
-print(cards, shuffled_cards)
+shuffled_cards = shuffle_card(54)
+print(shuffled_cards)
