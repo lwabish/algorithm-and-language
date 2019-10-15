@@ -18,11 +18,6 @@ func findDiagonalOrder(matrix [][]int) []int {
 			return result
 		}
 		// 到了右上的尽头
-		if i == 0 && direc == 1 {
-			if j+1 <= m {
-
-			}
-		}
 
 	}
 }
