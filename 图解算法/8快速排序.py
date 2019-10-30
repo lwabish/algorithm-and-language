@@ -14,6 +14,7 @@ def quick_sort(arr):
         greater = [i for i in arr[1:] if i > arr[piv_index]]
         return quick_sort(smaller)+[arr[piv_index]]+quick_sort(greater)
 
+
         # 方法3：每次以中间索引值为基准值（注意在切片smaller和greater时需要保证每次的结果都要是上次的真子集，否则可能无限递归，类似于书上的arr[1:]的做法，而不是直接用arr。就是所谓的递归中确保问题的规模可以缩小）
         # piv_index = int(len(arr) / 2)
         # smaller = [i for i in arr[:piv_index] if i <= arr[piv_index]
@@ -21,7 +22,6 @@ def quick_sort(arr):
         # greater = [i for i in arr[:piv_index] if i >
         #            arr[piv_index]]+[i for i in arr[piv_index+1:]]
         # return quick_sort(smaller)+[arr[piv_index]]+quick_sort(greater)
-
         # 方法1：我最开始的做法
         # piv_index = int(len(arr) / 2)           # 每次以中间索引值为基准值
         # smaller = [i for i in arr if i < arr[piv_index]]
@@ -30,8 +30,6 @@ def quick_sort(arr):
         # if smaller == [] and greater == []:  # 此处如果不判断，会遇到[4,4,4]这样的arr，会导致无限递归
         #     return equal
         # return quick_sort(smaller)+quick_sort(equal)+quick_sort(greater)
-
-
 # 测试速度
 for t in range(1, 8):
     list_length = 10**t

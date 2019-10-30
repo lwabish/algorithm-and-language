@@ -6,7 +6,7 @@
 # 类：在模块中定义并且实例化即可。from xxx import s即可得到单例的对象
 import threading
 import time
-from my_universal_operation import Singleton
+from luabish.common import Singleton
 
 
 class S:

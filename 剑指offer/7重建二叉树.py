@@ -1,5 +1,5 @@
 # 根据前序遍历和中序遍历，重建出一颗二叉树
-from my_data_structure import TreeNode, print_treenode, generate_treenode
+from luabish.dsaa import TreeNode, print_treenode, generate_treenode
 
 # 测试用例1：普通二叉树
 # 生成目标树
