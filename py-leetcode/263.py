@@ -1,27 +1,28 @@
 from typing import List
+import math
 tcs = [
-    # (28,),
-    (-2147483648,),
-    # (1,),
+    (905391974,),
+    (28,),
+    (-2,),
+    (1,),
+    (0,),
 ]
 
 
 class Solution:
     def isUgly(self, num: int) -> bool:
-        factors = list()
-
-        def split_factor(num):
-            num = abs(num)
-            for n in range(2, num+1):
-                if num % n == 0:
-                    factors.append(n)
-                    if n < num:
-                        print(n)
-                        split_factor(num//n)
-                    break
-        split_factor(num)
-        print(factors)
-        return not bool(set(factors) - set([2, 3, 5]))
+        if num <= 0:
+            return False
+        if num == 1:
+            return True
+        if num % 2 == 0:
+            return self.isUgly(num//2)
+        elif num % 3 == 0:
+            return self.isUgly(num//3)
+        elif num % 5 == 0:
+            return self.isUgly(num//5)
+        else:
+            return False
 
 
 if __name__ == '__main__':
