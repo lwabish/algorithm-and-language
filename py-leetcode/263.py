@@ -16,7 +16,8 @@ class Solution:
         if num == 1:
             return True
         if num % 2 == 0:
-            return self.isUgly(num//2)
+            # 右移1等价于除2
+            return self.isUgly(num >> 1)
         elif num % 3 == 0:
             return self.isUgly(num//3)
         elif num % 5 == 0:
