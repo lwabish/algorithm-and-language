@@ -1,5 +1,6 @@
 # 输入：5 1 2 3 4 5 输出：0 3.0
 
+
 def count(args):
     args = list(map(lambda x: int(x), args.split(' ')))
     minus_number = list(filter(lambda x: x < 0, args[1:]))
