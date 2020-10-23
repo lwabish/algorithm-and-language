@@ -1,4 +1,3 @@
-import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -12,6 +11,10 @@ public class LearnFilesAndPaths {
         String data1 = Files.readString(Paths.get("1.txt"));
 
         List<String> lines = Files.readAllLines(Paths.get("1.txt"));
+
+        System.out.println(data);
+        System.out.println(data1);
+        System.out.println(lines);
 
         // 写
         byte[] data2 = new byte[] { 1, 2, 3 };
