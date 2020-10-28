@@ -3,7 +3,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CA {
+public class LearnLambda {
     public static void main(String[] args) {
 
         // 普通写法
@@ -21,7 +21,7 @@ public class CA {
 
         // 直接引用已有的方法作为lambda函数（引用静态方法）
         // 方法签名一致即可。方法签名只看参数类型和返回类型，不看方法名称，也不看类的继承关系。
-        Arrays.sort(arr, CA::cmp);
+        Arrays.sort(arr, LearnLambda::cmp);
 
         // 引用实例方法
         // 实例方法的this也算一个参数
@@ -34,6 +34,7 @@ public class CA {
 
         // 总结：当函数需要的参数对应的接口有@FunctionalInterface时，就可以用同签名函数作为参数传递
         // 比如Arrays.sort的第二个参数和stream().map的参数
+        // 该接口只有一个方法，与该方法的签名相同的函数即可
 
     }
 

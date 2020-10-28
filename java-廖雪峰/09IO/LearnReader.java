@@ -37,7 +37,6 @@ public class LearnReader {
         try (Reader reader = new InputStreamReader(
                 new FileInputStream("/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/1.txt"),
                 "UTF-8")) {
-            // TODO:
         }
 
     }
