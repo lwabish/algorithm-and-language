@@ -39,3 +39,18 @@ class DecThread extends Thread{
         }
     }
 }
+
+//java内的原子操作：
+//单条 除double和long以外的基本类型赋值语句 和 引用类型赋值语句
+//long 和 double在x64是原子的，但是没有明确规定
+
+// 临界变量方法的局部变量是线程安全的
+class Pair{
+    int[] pair;
+    public void set (int first, int last){
+        //局部变量，线程安全
+        int[] ps = new int[]{first, last};
+        //单条引用赋值，线程安全，如果是多条语句，则要考虑加锁
+        this.pair = ps;
+    }
+}
