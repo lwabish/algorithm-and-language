@@ -1,4 +1,4 @@
-package main
+package tree
 
 import (
 	"fmt"
@@ -10,10 +10,6 @@ type TreeNode struct {
 	Val   int
 	Left  *TreeNode
 	Right *TreeNode
-}
-
-func main() {
-	NewTree("1 n 2 n 3 4").Draw()
 }
 
 // NewTreeByLevel 由特定形式的字符串生成一颗二叉树
