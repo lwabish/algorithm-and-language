@@ -1,7 +1,7 @@
 from typing import List
-from luabish.dsaa import generate_treenode, TreeNode
+from lwabish.algorithm.tree import TreeNode, new_tree
 tcs = [
-    (generate_treenode('1,null,2,3'),),
+    (new_tree('1,null,2,3'),),
 ]
 
 
@@ -9,8 +9,7 @@ class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         if root is None:
             return []
-        if root.left == root.right == None:
-            return [root.val]
+        # 左右中
         return self.postorderTraversal(root.left)+self.postorderTraversal(root.right)+[root.val]
 
 

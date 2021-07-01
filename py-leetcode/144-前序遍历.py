@@ -9,6 +9,7 @@ class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if root is None:
             return []
+        # 中左右
         return [root.val]+self.preorderTraversal(root.left)+self.preorderTraversal(root.right)
 
 
