@@ -1,7 +1,7 @@
 from typing import List
-from my_data_structure import TreeNode, generate_treenode
+from lwabish.algorithm.tree import TreeNode, new_tree
 tcs = [
-    (generate_treenode(
+    (new_tree(
         ','.join(map(lambda x:str(x), [3, 9, 20, 'null', 'null', 15, 7]))),),
 ]
 
