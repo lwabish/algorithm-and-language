@@ -11,6 +11,7 @@ class Solution:
     def maxPathSum(self, root: TreeNode) -> int:
         self.max_sum = root.val
 
+        # 注意排除负值
         def do(root: TreeNode):
             if not root:
                 return 0
