@@ -4,7 +4,6 @@ tc = ['abc']
 tc = ["dog", "racecar", "car"]
 tc = ['c', 'c']
 tc = ["aa", "a"]
-# tc = ['a', 'aa']
 
 
 def main(strs):
