@@ -9,6 +9,9 @@ tcs = [
 
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        """
+        螺旋矩阵
+        """
         # 算出矩阵元素总数，作为循环的终止标记
         m, n = len(matrix), len(matrix[0])
         if m == 1:
