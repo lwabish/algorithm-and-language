@@ -1,43 +1,35 @@
 from typing import List
-from my_data_structure import generate_linknode_from_list, print_linknode
+from lwabish.structureutils.listnode import *
 tcs = [
-    (generate_linknode_from_list([1, 2, 3, 4, 5]),),
+    (new_listnode([1, 2, 3]),),
+    (new_listnode([1]),),
+    (new_listnode([]),),
 ]
 
 
-new_head = None
-
-
-# 递归，问题是需要在外面搞一个变量存尾节点
-class Solution1:
-    def reverseList(self, head):
-
-        def reverse(node, last):
-            if not node:
-                global new_head
-                new_head = last
-                return
-            reverse(node.next, node)
-            node.next = last
-        reverse(head, None)
-        return new_head
-
-
-# 多元赋值
 class Solution:
-    def reverseList(self, head):
+    def reverseList(self, head: ListNode) -> ListNode:
         """
-        :type head: ListNode
-        :rtype: ListNode
+        反转链表
+        迭代法：关键问题是迭代过程中随着链的断开，会导致迭代循环被破坏。
+        因此在基本的链表迭代基础上稍加修改，增加一个单独的变量存储迭代变量
+        难点：while循环里的每一行顺序都不能乱，乱了状态就错了
         """
         last_node = None
-        node = head
-        while node:
-            node.next, last_node, node = last_node, node, node.next
+        process_node = head
+        while process_node:
+            # 断链后会丢掉，存引用
+            next_node = process_node.next
+            # 反转，把当前迭代到的node的next改为last
+            process_node.next = last_node
+            # 把这轮的迭代变量更新给last node
+            last_node = process_node
+            # 更新迭代变量为下一个
+            process_node = next_node
         return last_node
 
 
 if __name__ == '__main__':
-    solution = Solution1()
+    solution = Solution()
     for tc in tcs:
-        print_linknode(solution.reverseList(*tc))
+        print_listnode(solution.reverseList(*tc))
