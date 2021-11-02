@@ -1,9 +1,9 @@
 from typing import List
-from my_data_structure import generate_linknode_from_list, print_linknode, LinkNode
+from lwabish.structureutils.listnode import *
 tcs = [
     (
-        generate_linknode_from_list([1, 2, 3, 4]),
-        generate_linknode_from_list([2, 4, 5, 6])
+        new_listnode([1, 2, 3, 4]),
+        new_listnode([2, 4, 5, 6])
     ),
 ]
 
@@ -11,9 +11,8 @@ tcs = [
 class Solution:
     def mergeTwoLists(self, l1, l2):
         """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
+        合并排序链表
+        2019年第一次版本
         """
         if l1 and l2:
             if l1.val < l2.val:
@@ -50,4 +49,4 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
     for tc in tcs:
-        print_linknode(solution.mergeTwoLists(*tc))
+        print_listnode(solution.mergeTwoLists(*tc))

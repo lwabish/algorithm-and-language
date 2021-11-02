@@ -11,8 +11,8 @@ class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         """
         合并有序链表
-        递归版本非常优雅但是不太好理解
-        https://leetcode-cn.com/problems/merge-two-sorted-lists/comments/51102
+        只有操作，没有技巧版本
+        对result全部申请了新的空间，空间复杂度高，不用关心旧链表的指针
         """
         if not l1:
             return l2
@@ -38,7 +38,6 @@ class Solution:
                 l1 = l1.next
             tail.next = this_node
             tail = tail.next
-
         return head.next
 
 
