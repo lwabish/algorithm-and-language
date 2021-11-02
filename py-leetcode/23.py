@@ -9,7 +9,8 @@ class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         """
         合并排序链表数组
-
+        该版本是看答案之前写的
+        显然内层循环找最小的部分可以优化，即题解中的优先级队列
         """
         # 初始化一个list，把head都放进来
         heads = [listnode if listnode else None for listnode in lists]
