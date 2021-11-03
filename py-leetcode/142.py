@@ -18,7 +18,7 @@ class Solution:
         https://leetcode-cn.com/problems/linked-list-cycle-ii/solution/linked-list-cycle-ii-kuai-man-zhi-zhen-shuang-zhi-/
         """
         if not head or not head.next:
-            return False
+            return None
         slow, fast = head, head
         while True:
             if not fast or not fast.next:
