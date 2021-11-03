@@ -1,34 +1,26 @@
 from typing import List
-from my_data_structure import generate_linknode_from_list
-ln = generate_linknode_from_list([1, 2, 3, 4, 5])
-node = ln
-while node:
-    if node.val == 3:
-        entrance = node
-    if node.val == 5:
-        node.next = entrance
-        break
-    node = node.next
+from lwabish.structureutils.listnode import *
+
 tcs = [
-    (ln,),
-    (generate_linknode_from_list([1, 2, 3, 4]),),
+    (add_circle_for_listnode(new_listnode([1, 2, 3, 4, 5, 6]), 3),),
+    (new_listnode([1, 2, 3, 4]),),
 ]
 
 
-class Solution(object):
-    def hasCycle(self, head):
+class Solution:
+    def hasCycle(self, head: ListNode) -> bool:
         """
-        :type head: ListNode
-        :rtype: bool
+        判断链表是否有环
+        双指针
+        朴素版本
         """
         p1, p2 = head, head
         first_flag = True
         while p2:
-            if p1 == p2:
-                if first_flag:
-                    first_flag = False
-                else:
-                    return True
+            if p1 == p2 and first_flag:
+                first_flag = False
+            elif p1 == p2 and not first_flag:
+                return True
             p1 = p1.next
             if not p2.next:
                 p2 = p2.next
