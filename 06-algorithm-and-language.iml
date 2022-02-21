@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Python" name="Python">
+      <configuration sdkName="Python 3.10 (calibre)" />
+    </facet>
+  </component>
+  <component name="Go" enabled="true" />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/01程序基础" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/02流程控制" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/03数组操作" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/04面向对象基础" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/05java核心类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/06异常处理" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/07泛型" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/08集合" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/09IO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/10函数式编程" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/11反射" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/12多线程" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Python 3.10 (calibre) interpreter library" level="application" />
+  </component>
+</module>
