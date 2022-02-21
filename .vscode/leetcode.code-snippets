@@ -21,6 +21,6 @@
 			"    for tc in tcs:",
 			"        print(solution.$2(*tc))",
 		],
-		"description": "Log output to console"
+		"description": "vscode snippet：输入lc自动填充leetcode模板"
 	}
 }
