@@ -52,6 +52,10 @@ public class RemoteControlTest {
 
         System.out.println(remoteControl);
 
+        // 测试undo按钮
+        remoteControl.onButtonPushed(1);
+        remoteControl.undoButtonPushed();
+
 
     }
 }

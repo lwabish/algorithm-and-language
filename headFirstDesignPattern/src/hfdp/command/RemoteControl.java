@@ -11,6 +11,7 @@ import java.util.Arrays;
 public class RemoteControl {
     Command[] onCommands;
     Command[] offCommands;
+    Command lastCommand;
 
     public RemoteControl() {
         int amount = 7;
@@ -22,6 +23,7 @@ public class RemoteControl {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
         }
+        lastCommand = noCommand;
     }
 
     public void setCommand(int slot, Command on, Command off) {
@@ -31,10 +33,16 @@ public class RemoteControl {
 
     public void onButtonPushed(int slot) {
         onCommands[slot].execute();
+        lastCommand = onCommands[slot];
     }
 
     public void offButtonPushed(int slot) {
         offCommands[slot].execute();
+        lastCommand = onCommands[slot];
+    }
+
+    public void undoButtonPushed() {
+        lastCommand.undo();
     }
 
     @Override
