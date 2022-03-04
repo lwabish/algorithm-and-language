@@ -2,27 +2,21 @@ package hfdp.iterator.standard;
 
 import hfdp.iterator.handmade.MenuItem;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
  * @author Lwabish
  */
 public class Waitress {
-    Menu cakeMenu;
-    Menu dinerMenu;
-    Menu cafeMenu;
+    ArrayList<Menu> menus;
 
-    public Waitress(Menu cakeMenu, Menu dinerMenu, Menu cafeMenu) {
-        this.cakeMenu = cakeMenu;
-        this.dinerMenu = dinerMenu;
-        this.cafeMenu = cafeMenu;
+    public Waitress(ArrayList<Menu> menus) {
+        this.menus = menus;
     }
 
     public void printMenu() {
-        // 省略了外部Iterator，直接把iterator写在了Menu类里
-        printMenu(cakeMenu.createIterator());
-        printMenu(dinerMenu.createIterator());
-        printMenu(cafeMenu.createIterator());
+        menus.forEach(menu -> printMenu(menu.createIterator()));
     }
 
     private void printMenu(Iterator<MenuItem> iterator) {

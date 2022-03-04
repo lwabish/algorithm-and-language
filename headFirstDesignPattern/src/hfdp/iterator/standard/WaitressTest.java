@@ -1,5 +1,7 @@
 package hfdp.iterator.standard;
 
+import java.util.ArrayList;
+
 /**
  * @author Lwabish
  */
@@ -9,7 +11,11 @@ public class WaitressTest {
         DinerMenu dinerMenu = new DinerMenu();
         CafeMenu cafeMenu = new CafeMenu();
 
-        Waitress waitress = new Waitress(cakeMenu, dinerMenu, cafeMenu);
+        Waitress waitress = new Waitress(new ArrayList<Menu>() {{
+            add(cafeMenu);
+            add(dinerMenu);
+            add(cakeMenu);
+        }});
         waitress.printMenu();
     }
 }
