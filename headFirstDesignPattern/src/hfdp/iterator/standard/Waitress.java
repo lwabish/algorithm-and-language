@@ -10,21 +10,24 @@ import java.util.Iterator;
 public class Waitress {
     Menu cakeMenu;
     Menu dinerMenu;
+    Menu cafeMenu;
 
-    public Waitress(CakeMenu cakeMenu, DinerMenu dinerMenu) {
+    public Waitress(Menu cakeMenu, Menu dinerMenu, Menu cafeMenu) {
         this.cakeMenu = cakeMenu;
         this.dinerMenu = dinerMenu;
+        this.cafeMenu = cafeMenu;
     }
 
     public void printMenu() {
         // 省略了外部Iterator，直接把iterator写在了Menu类里
         printMenu(cakeMenu.createIterator());
         printMenu(dinerMenu.createIterator());
+        printMenu(cafeMenu.createIterator());
     }
 
-    private void printMenu(Iterator iterator) {
+    private void printMenu(Iterator<MenuItem> iterator) {
         while (iterator.hasNext()) {
-            MenuItem menuItem = (MenuItem) iterator.next();
+            MenuItem menuItem = iterator.next();
             System.out.println(menuItem.getName());
         }
     }
