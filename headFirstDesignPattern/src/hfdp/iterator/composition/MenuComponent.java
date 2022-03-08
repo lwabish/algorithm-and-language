@@ -1,5 +1,7 @@
 package hfdp.iterator.composition;
 
+import java.util.Iterator;
+
 /**
  * @author Lwabish
  */
@@ -17,6 +19,10 @@ public abstract class MenuComponent {
     }
 
     public void print() {
+        throw new UnsupportedOperationException();
+    }
+
+    public Iterator<MenuComponent> createIterator() {
         throw new UnsupportedOperationException();
     }
 
