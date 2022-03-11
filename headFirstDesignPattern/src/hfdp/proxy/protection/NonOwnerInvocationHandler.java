@@ -17,14 +17,12 @@ public class NonOwnerInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Exception {
-        // 仅允许改变别人的评分，其他不可
+        // 仅允许改变别人的评分，其他setter均不可
         if (Constants.RATING_SETTER_NAME.equals(method.getName())) {
             return method.invoke(person, args);
         } else if (method.getName().startsWith(Constants.SETTER_PREFIX)) {
             throw new IllegalAccessException();
-        } else if (method.getName().startsWith(Constants.GETTER_PREFIX)) {
-            return method.invoke(person, args);
         }
-        return null;
+        return method.invoke(person, args);
     }
 }
