@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/lwabish/go-lib/tree"
+	tree "github.com/lwabish/go-snippets/pkg/algorithm"
 )
 
 func main() {

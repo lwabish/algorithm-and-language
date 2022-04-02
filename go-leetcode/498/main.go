@@ -11,7 +11,7 @@ func findDiagonalOrder(matrix [][]int) []int {
 	// 列
 	var n = len(matrix[0])
 	i, j := 0, 0
-	var direc = 1
+	//var direc = 1
 	for {
 		result = append(result, matrix[i][j])
 		if i == m-1 && j == n-1 {
