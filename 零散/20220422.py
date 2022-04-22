@@ -10,11 +10,10 @@ def main():
             print()
             scores = sorted(v.items(), key=lambda x: x[1])
             score_list = list(map(lambda x: x[1], scores))
-            for i in range(len(scores)):
-                tup = scores[i]
-                score = tup[1]
+            for _, j in enumerate(scores):
+                score = j[1]
                 # list.index()可以优雅地实现并列排名
-                print(k, tup[0], score_list.index(score)+1)
+                print(k, j[0], score_list.index(score)+1)
 
 
 if __name__ == "__main__":
