@@ -9,18 +9,18 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/01程序基础" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/02流程控制" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/03数组操作" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/04面向对象基础" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/05java核心类" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/06异常处理" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/07泛型" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/08集合" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/09IO" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/10函数式编程" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/11反射" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java-廖雪峰/12多线程" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/01程序基础" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/02流程控制" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/03数组操作" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/04面向对象基础" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/05java核心类" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/06异常处理" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/07泛型" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/08集合" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/09IO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/10函数式编程" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/11反射" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-liaoxuefeng/12多线程" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
