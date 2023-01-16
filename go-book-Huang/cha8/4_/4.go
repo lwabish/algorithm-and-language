@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	"./struct_pack/structpack"
+	structpack "github.com/lwabish/algorithm-and-language/go-book-Huang/cha8/4_/struct_pack"
 )
 
 func main() {

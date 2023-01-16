@@ -3,7 +3,7 @@ import os
 
 
 def main():
-    with open("零散/20220422.json", "r") as f:
+    with open("chores/20220422.json", "r") as f:
         data = json.load(f)
         for k, v in data.items():
             # print(k, v)

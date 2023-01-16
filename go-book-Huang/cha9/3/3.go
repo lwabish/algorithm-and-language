@@ -26,9 +26,9 @@ type valuable interface {
 	getValue() float32
 }
 
-// func showValue(asset valuable) {
-// 	fmt.Println(asset.getValue())
-// }
+//	func showValue(asset valuable) {
+//		fmt.Println(asset.getValue())
+//	}
 func main() {
 	o := stockPosition{"goog", 567.1, 4}
 	fmt.Println(valuable(o).getValue())

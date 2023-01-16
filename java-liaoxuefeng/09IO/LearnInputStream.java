@@ -15,7 +15,7 @@ public class LearnInputStream {
     public static void readFile() throws IOException {
         // try参数中的资源如果实现了AutoCloseable接口，则编译器自动关闭
         try (InputStream input = new FileInputStream(
-                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/1.txt")) {
+                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/1.txt")) {
             int n;
             while ((n = input.read()) != -1) {
                 System.out.println(n);
@@ -25,7 +25,7 @@ public class LearnInputStream {
 
     public static void readWithBuffer() throws IOException {
         try (InputStream input = new FileInputStream(
-                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/1.txt")) {
+                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/1.txt")) {
             byte[] buffer = new byte[3];
             int n;
             for (;;) {
@@ -62,7 +62,7 @@ public class LearnInputStream {
     public static void testReadAsString() throws IOException {
         // readAsString函数既可以接收FileInputStream
         try (InputStream i1 = new FileInputStream(
-                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/1.txt")) {
+                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/1.txt")) {
             System.out.println(readAsString(i1));
         }
 

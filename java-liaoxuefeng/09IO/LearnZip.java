@@ -7,7 +7,7 @@ public class LearnZip {
 
         // read zip
         try (ZipInputStream zip = new ZipInputStream(
-                new FileInputStream("/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/1.zip"))) {
+                new FileInputStream("/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/1.zip"))) {
             ZipEntry entry;
             while ((entry = zip.getNextEntry()) != null) {
                 String name = entry.getName();

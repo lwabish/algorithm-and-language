@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	"./person"
+	"github.com/lwabish/algorithm-and-language/go-book-Huang/cha8/16/person"
 )
 
 func main() {

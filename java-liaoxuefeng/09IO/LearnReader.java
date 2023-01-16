@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 
 public class LearnReader {
     public static void main(String[] args) throws Exception {
-        try (Reader reader = new FileReader("/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/1.txt",
+        try (Reader reader = new FileReader("/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/1.txt",
                 StandardCharsets.UTF_8);) {
             for (;;) {
                 int n = reader.read();
@@ -19,7 +19,7 @@ public class LearnReader {
             }
         }
 
-        try (Reader reader1 = new FileReader("/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/1.txt",
+        try (Reader reader1 = new FileReader("/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/1.txt",
                 StandardCharsets.UTF_8)) {
             char[] buffer = new char[1000];
             int n;
@@ -35,7 +35,7 @@ public class LearnReader {
         }
         // 将InputStream转为reader
         try (Reader reader = new InputStreamReader(
-                new FileInputStream("/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/1.txt"),
+                new FileInputStream("/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/1.txt"),
                 "UTF-8")) {
         }
 

@@ -14,7 +14,7 @@ public class LearnOutputStream {
 
     static void test1() throws IOException {
         OutputStream o1 = new FileOutputStream(
-                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/2.txt");
+                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/2.txt");
         // H
         o1.write(72);
         // e
@@ -24,7 +24,7 @@ public class LearnOutputStream {
 
     static void test2() throws IOException {
         try (OutputStream o2 = new FileOutputStream(
-                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-廖雪峰/09IO/2.txt")) {
+                "/Users/wubowen/cloud/Projects/0_algorithm_language/java-liaoxuefeng/09IO/2.txt")) {
             o2.write("Hello".getBytes());
         }
     }
