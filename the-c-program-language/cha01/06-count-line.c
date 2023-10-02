@@ -8,7 +8,8 @@ int main()
     {
         if (c == '\n')
         {
-            nl++;
+            // nl++;
+            ++nl;
         }
     }
     printf("Number of lines: %d\n", nl);
