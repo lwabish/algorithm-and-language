@@ -1,3 +1,4 @@
+int power(int base, int n);
 // c中函数传值是值传递，可以直接在函数中利用形参，从而减少局部变量
 int power(int base, int n)
 {
@@ -7,4 +8,10 @@ int power(int base, int n)
         p = p * base;
     }
     return p;
+}
+
+int main(int argc, char const *argv[])
+{
+    /* code */
+    return 0;
 }
