@@ -5,7 +5,8 @@ int max;
 char line[MAXLINE];
 char longest[MAXLINE];
 
-int getline1(void);
+// void省略也可以正常编译
+int getline1();
 void copy(void);
 
 int getline1(void)
