@@ -2,5 +2,6 @@
     "files.associations": {
         "*.yml": "yaml",
         "ios": "cpp"
-    }
+    },
+    "Codegeex.EnableExtension": false
 }
