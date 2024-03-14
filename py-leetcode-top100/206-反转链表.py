@@ -14,10 +14,14 @@ tcs = [
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         p, tail = head, None
-        while p is not None:
+        while p:
+            # 缓存下一个节点，因为断链会丢掉
             tmp = p.next
+            # 核心操作：断链重接
             p.next = tail
+            # 更新尾巴
             tail = p
+            # 更新下一个操作对象
             p = tmp
         return tail
 
