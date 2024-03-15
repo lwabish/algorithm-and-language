@@ -15,6 +15,7 @@ tcs = [
 
 # 不难理解，但是很难想到
 # 理解这题的关键：复制出来的新节点的random节点可能还不存在
+# 此题宜直接记住
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         cache = {}
