@@ -11,6 +11,8 @@ tcs = [
 
 
 # 迭代：梳理清楚每次断谁，接谁，什么顺序
+# 在面试中总犯错误：一次循环总想搞三个节点
+# 切记：一次迭代只关注两个节点
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         p, tail = head, None
